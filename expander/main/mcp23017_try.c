@@ -16,8 +16,10 @@
 #include "i2c_bus.h"
 #include "esp_log.h"
 
-#define I2C_MASTER_SCL_IO           21          /*!< gpio number for I2C master clock IO21*/
-#define I2C_MASTER_SDA_IO           22          /*!< gpio number for I2C master data  IO15*/
+
+// Pinout on a M5 Stack Atom.
+#define I2C_MASTER_SCL_IO           26          /*!< gpio number for I2C master clock IO26 WHITE Line*/
+#define I2C_MASTER_SDA_IO           32          /*!< gpio number for I2C master data  IO32 YELLOW Line*/
 #define I2C_MASTER_NUM              I2C_NUM_1   /*!< I2C port number for master dev */
 #define I2C_MASTER_TX_BUF_DISABLE   0           /*!< I2C master do not need buffer */
 #define I2C_MASTER_RX_BUF_DISABLE   0           /*!< I2C master do not need buffer */
